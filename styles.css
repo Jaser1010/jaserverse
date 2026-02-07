@@ -11,42 +11,42 @@
     --secondary: #764ba2;
     --accent: #00d4ff;
     --accent-green: #00ff88;
-    
+
     /* Background Colors */
     --bg-dark: #0a0a1a;
     --bg-card: rgba(20, 20, 40, 0.8);
     --bg-card-hover: rgba(30, 30, 60, 0.9);
-    
+
     /* Text Colors */
     --text-primary: #ffffff;
     --text-secondary: #a0aec0;
     --text-muted: #718096;
-    
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     --gradient-accent: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
     --gradient-glow: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);
-    
+
     /* Shadows */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.5);
     --shadow-glow: 0 0 30px rgba(102, 126, 234, 0.4);
-    
+
     /* Borders */
     --border-color: rgba(255, 255, 255, 0.1);
     --border-radius: 12px;
     --border-radius-lg: 20px;
-    
+
     /* Spacing */
     --section-padding: 100px 0;
     --container-width: 1200px;
-    
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
-    
+
     /* Font */
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'Fira Code', monospace;
@@ -119,13 +119,15 @@ body {
     background: var(--bg-dark);
 }
 
-.stars, .stars2, .stars3 {
+.stars,
+.stars2,
+.stars3 {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
+    background-image:
         radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.3), transparent),
         radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.2), transparent),
         radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.4), transparent),
@@ -136,7 +138,7 @@ body {
 }
 
 .stars2 {
-    background-image: 
+    background-image:
         radial-gradient(1px 1px at 50px 160px, rgba(255, 255, 255, 0.2), transparent),
         radial-gradient(2px 2px at 100px 200px, rgba(255, 255, 255, 0.3), transparent),
         radial-gradient(1px 1px at 180px 140px, rgba(255, 255, 255, 0.2), transparent);
@@ -145,7 +147,7 @@ body {
 }
 
 .stars3 {
-    background-image: 
+    background-image:
         radial-gradient(1px 1px at 80px 100px, rgba(102, 126, 234, 0.4), transparent),
         radial-gradient(2px 2px at 150px 50px, rgba(118, 75, 162, 0.3), transparent),
         radial-gradient(1px 1px at 220px 180px, rgba(0, 212, 255, 0.3), transparent);
@@ -154,8 +156,13 @@ body {
 }
 
 @keyframes stars {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-1000px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-1000px);
+    }
 }
 
 /* =====================================================
@@ -275,8 +282,13 @@ body {
     transition: var(--transition-normal);
 }
 
-.hamburger::before { top: -8px; }
-.hamburger::after { top: 8px; }
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
 
 /* =====================================================
    Hero Section
@@ -315,11 +327,29 @@ body {
 }
 
 @keyframes wave {
-    0%, 60%, 100% { transform: rotate(0deg); }
-    10%, 30% { transform: rotate(14deg); }
-    20% { transform: rotate(-8deg); }
-    40% { transform: rotate(-4deg); }
-    50% { transform: rotate(10deg); }
+
+    0%,
+    60%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10%,
+    30% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
 }
 
 .hero-title {
@@ -352,8 +382,16 @@ body {
 }
 
 @keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
 }
 
 .hero-description {
@@ -496,8 +534,13 @@ body {
 }
 
 @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Scroll Indicator */
@@ -545,8 +588,15 @@ body {
 }
 
 @keyframes scroll {
-    0% { opacity: 1; top: 8px; }
-    100% { opacity: 0; top: 20px; }
+    0% {
+        opacity: 1;
+        top: 8px;
+    }
+
+    100% {
+        opacity: 0;
+        top: 20px;
+    }
 }
 
 /* =====================================================
@@ -1079,49 +1129,49 @@ body {
         text-align: center;
         gap: 40px;
     }
-    
+
     .hero-content {
         order: 2;
     }
-    
+
     .hero-image {
         order: 1;
     }
-    
+
     .hero-description {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .hero-cta {
         justify-content: center;
     }
-    
+
     .hero-social {
         justify-content: center;
     }
-    
+
     .image-wrapper {
         width: 280px;
         height: 280px;
     }
-    
+
     .about-content {
         grid-template-columns: 1fr;
     }
-    
+
     .about-stats {
         justify-content: center;
     }
-    
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .contact-content {
         grid-template-columns: 1fr;
     }
@@ -1143,60 +1193,60 @@ body {
         transition: var(--transition-normal);
         border-left: 1px solid var(--border-color);
     }
-    
+
     .nav-menu.active {
         right: 0;
     }
-    
+
     .nav-link {
         font-size: 1.25rem;
         padding: 16px 24px;
     }
-    
+
     .nav-toggle {
         display: block;
         z-index: 1001;
     }
-    
+
     .nav-toggle.active .hamburger {
         background: transparent;
     }
-    
+
     .nav-toggle.active .hamburger::before {
         transform: rotate(45deg);
         top: 0;
     }
-    
+
     .nav-toggle.active .hamburger::after {
         transform: rotate(-45deg);
         top: 0;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .hero-title {
         font-size: 2.25rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .scroll-indicator {
         display: none;
     }
-    
+
     .about-stats {
         flex-wrap: wrap;
         gap: 24px;
     }
-    
+
     .contact-buttons {
         flex-direction: column;
     }
-    
+
     .btn {
         width: 100%;
         justify-content: center;
@@ -1207,25 +1257,25 @@ body {
     :root {
         --section-padding: 60px 0;
     }
-    
+
     .image-wrapper {
         width: 220px;
         height: 220px;
     }
-    
+
     .hero-cta {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .hero-cta .btn {
         width: 100%;
     }
-    
+
     .section-title {
         font-size: 1.75rem;
     }
-    
+
     .project-card {
         margin: 0 -12px;
         border-radius: 16px;
