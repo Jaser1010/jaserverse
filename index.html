@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Jaser Kasim - Back-end .NET Developer building APIs and web apps with ASP.NET Core and SQL">
+    <meta name="keywords" content="Jaser Kasim, .NET Developer, ASP.NET Core, C#, Software Engineer, Egypt">
+    <meta name="author" content="Jaser Kasim">
+
+    <title>JaserVerse | .NET Developer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Jaser</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="wave">👋</span> Hello, I'm
+                </div>
+                <h1 class="hero-title">
+                    <span class="name-highlight">Jaser Kasim</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Junior .NET Back-End Developer focused on building RESTful APIs using ASP.NET Core,
+                    Entity Framework Core, and SQL Server. Completed graduation project with an A++ grade.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Jaser1010" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaser-kasim-j1k2/" target="_blank" rel="noopener noreferrer"
+                        class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Jaser_Kasim/" target="_blank" rel="noopener noreferrer"
+                        class="social-link" aria-label="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-glow"></div>
+                    <img src="assets/profile.jpeg" alt="Jaser Kasim" class="profile-img">
+                    <div class="image-ring"></div>
+                    <div class="image-ring image-ring-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a <span class="highlight">Junior .NET Back-End Developer</span> based in
+                        <span class="highlight">6th of October City, Egypt</span>, focused on building
+                        RESTful APIs using ASP.NET Core Web API, Entity Framework Core, and SQL Server.
+                    </p>
+                    <p>
+                        I completed the <strong>Route Academy Back-End Development (.NET)</strong> track and
+                        recently earned my <strong>Bachelor's degree in Computer Engineering</strong> from
+                        <strong>Nile University</strong> (Faculty of Engineering), achieving an <strong>A++
+                            grade</strong>
+                        on my graduation project.
+                    </p>
+                    <p>
+                        I also trained with <strong>A2SV (Africa to Silicon Valley)</strong> for a year,
+                        focusing on algorithms, data structures, and software engineering best practices.
+                        Currently building real-world backend projects and open to Junior/Intern .NET roles.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="481">0</span>
+                            <span class="stat-label">LeetCode Solved</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="500">0</span>+
+                            <span class="stat-label">Connections</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="30">0</span>+
+                            <span class="stat-label">Repositories</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-header">
+                        <i class="fas fa-terminal"></i>
+                        <span>jaser@dev:~$</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="code-line">
+                            <span class="code-key">name</span>: <span class="code-string">"Jaser Kasim"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-key">location</span>: <span class="code-string">"Egypt 🇪🇬"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-key">role</span>: <span class="code-string">"Junior .NET Back-End
+                                Developer"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-key">education</span>: <span class="code-string">"B.E. Computer
+                                Engineering - Nile University"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-key">training</span>: <span class="code-string">"Route Academy |
+                                A2SV"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-key">specialization</span>: <span class="code-string">"ASP.NET Core & REST
+                                APIs"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-key">interests</span>: [
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-string">"Web APIs"</span>,
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-string">"Data Analysis"</span>,
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-string">"Problem Solving"</span>
+                        </div>
+                        <div class="code-line">
+                            ]
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="section-tag section-tag-end">&lt;/about&gt;</span>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i> Languages
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-cuttlefish"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-cuttlefish"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-layer-group"></i> Frameworks
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>ASP.NET Core</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Entity Framework</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i> Tools & Platforms
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Visual Studio</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concepts -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-lightbulb"></i> Concepts
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-sitemap"></i>
+                            <span>REST APIs</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cubes"></i>
+                            <span>OOP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>MVC</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-vial"></i>
+                            <span>Unit Testing</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>LINQ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="section-tag section-tag-end">&lt;/skills&gt;</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Check out some of my recent work</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Gym Management System -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Jaser1010/gym-management-system" target="_blank"
+                                    rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Gym Management System</h3>
+                        <p class="project-description">
+                            Full-stack gym web app with role-based access, CRUD for members, trainers & plans.
+                            Supports session scheduling & billing with layered architecture.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">ASP.NET Core</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">MVC</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: E-Commerce Store -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Jaser1010/ecommerce-angular-store" target="_blank"
+                                    rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Angular Store</h3>
+                        <p class="project-description">
+                            Angular front-end for an e-commerce store with categories, product listings,
+                            product details, and a shopping cart. Built with Angular and TypeScript.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Grades Auto-Filler -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Jaser1010/grades-auto-filler" target="_blank"
+                                    rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Grades Auto-Filler</h3>
+                        <p class="project-description">
+                            Automated bubble-sheet grading tool using Python and OpenCV. Performs optical
+                            mark recognition on answer sheets, extracts student IDs and outputs scores.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Health Lifestyle Analysis -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Jaser1010/health-lifestyle-analysis" target="_blank"
+                                    rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Health Lifestyle Analysis</h3>
+                        <p class="project-description">
+                            Analysis of diet, exercise & lifestyle choices on global health. Uses Python
+                            to explore Google Trends, World Bank & FAOSTAT data.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Frontend Mini Projects -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Jaser1010/frontend-mini-projects" target="_blank"
+                                    rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Frontend Mini Projects</h3>
+                        <p class="project-description">
+                            Collection of mini front-end projects: calculator, multi-step form, login UI,
+                            Outlook clone, portfolio site, and translation app.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: .NET Advanced -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Jaser1010/route-dotnet-adv-04" target="_blank"
+                                    rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">.NET Advanced Exercises</h3>
+                        <p class="project-description">
+                            Advanced .NET exercises for Route Academy's training focusing on advanced
+                            programming concepts, patterns, and techniques.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">.NET</span>
+                            <span class="tag">Advanced Concepts</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/Jaser1010?tab=repositories" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline">
+                    <i class="fab fa-github"></i> View All Projects
+                </a>
+            </div>
+
+            <span class="section-tag section-tag-end">&lt;/projects&gt;</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+201501777252">01501777252</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:jaserosama4@gmail.com">jaserosama4@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>6th of October City, Egypt</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Jaser1010" target="_blank"
+                                rel="noopener noreferrer">github.com/Jaser1010</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/jaser-kasim-j1k2/" target="_blank"
+                                rel="noopener noreferrer">in/jaser-kasim-j1k2</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LeetCode</h4>
+                            <a href="https://leetcode.com/u/Jaser_Kasim/" target="_blank"
+                                rel="noopener noreferrer">leetcode.com/Jaser_Kasim</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+                    <div class="contact-card">
+                        <div class="card-glow"></div>
+                        <h3>Let's Build Something Amazing</h3>
+                        <p>I'm currently open to new opportunities and exciting projects. Feel free to reach out!</p>
+                        <div class="contact-buttons">
+                            <a href="https://www.linkedin.com/in/jaser-kasim-j1k2/" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary">
+                                <i class="fab fa-linkedin-in"></i> Connect on LinkedIn
+                            </a>
+                            <a href="https://github.com/Jaser1010" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-outline">
+                                <i class="fab fa-github"></i> Check GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="section-tag section-tag-end">&lt;/contact&gt;</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">JaserVerse</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://github.com/Jaser1010" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaser-kasim-j1k2/" target="_blank" rel="noopener noreferrer"
+                        class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Jaser_Kasim/" target="_blank" rel="noopener noreferrer"
+                        class="social-link" aria-label="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copy">
+                    &copy; <span id="year"></span> Jaser Kasim. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
