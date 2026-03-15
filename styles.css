@@ -492,7 +492,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 12px;
     position: relative;
     z-index: 2;
     border: 4px solid rgba(102, 126, 234, 0.3);
