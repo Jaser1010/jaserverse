@@ -485,17 +485,35 @@ body {
 .image-wrapper {
     position: relative;
     width: 350px;
-    height: 350px;
+    height: 420px; /* Increased height for a better portrait aspect ratio */
+    border-radius: 20px; /* Soft rounded corners instead of a circle */
+    overflow: hidden; /* Ensures the image respects the corners */
+    box-shadow: var(--shadow-lg);
 }
 
 .profile-img {
     width: 100%;
     height: 100%;
+    /* 'object-fit: cover' fills the area.
+       'object-position: top' ensures your hair/head isn't cut off.
+    */
     object-fit: cover;
-    border-radius: 12px;
+    object-position: top; 
+    
     position: relative;
     z-index: 2;
-    border: 4px solid rgba(102, 126, 234, 0.3);
+    border: 1px solid var(--border-color);
+}
+
+/* Optional: Adjusting the glowing rings to match the new square shape 
+*/
+.image-ring, .image-ring-2 {
+    position: absolute;
+    inset: -15px;
+    border: 2px dashed rgba(102, 126, 234, 0.3);
+    border-radius: 30px; /* Matches the new rounded square look */
+    animation: rotate 20s linear infinite;
+    z-index: 1;
 }
 
 .image-glow {
@@ -503,34 +521,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
     background: var(--gradient-primary);
-    border-radius: 50%;
     filter: blur(60px);
-    opacity: 0.4;
-    z-index: 1;
-}
-
-.image-ring {
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    border: 2px dashed rgba(102, 126, 234, 0.3);
-    border-radius: 50%;
-    animation: rotate 20s linear infinite;
-}
-
-.image-ring-2 {
-    top: -40px;
-    left: -40px;
-    right: -40px;
-    bottom: -40px;
-    animation-direction: reverse;
-    animation-duration: 30s;
-    border-color: rgba(118, 75, 162, 0.2);
+    opacity: 0.2; /* Lowered opacity so the white background of the photo doesn't clash */
+    z-index: 0;
 }
 
 @keyframes rotate {
