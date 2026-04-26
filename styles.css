@@ -853,7 +853,7 @@ body {
 
 /*.project-image {
     height: 180px;
-    background: var(--gradient-primary);
+    background: white;
     position: relative;
     display: flex;
     align-items: center;
